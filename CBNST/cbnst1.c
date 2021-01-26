@@ -41,7 +41,7 @@ float bisection(float a,float b)
 	if(fabs(temp-c)<tol)
 	{
 		printf("Value of c after %d iteration is %f\n",i+1,c);
-		printf("root is %f found at %d iteration\n",c,i+1);
+		printf("Root is %f found at %d iteration\n",c,i+1);
 		return;
 	}
 	
