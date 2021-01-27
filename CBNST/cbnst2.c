@@ -15,7 +15,7 @@ float bisection(float a,float b)
 {
 	float c,tol,temp;
 	int i,itr;
-	printf("Enter the tolerance and iterations of the roots.\n");
+	printf("Enter the Tolerance and Iterations of the roots.\n");
 	scanf("%f%d",&tol,&itr);
 	for(i=1;i<=itr;i++)
 	{
