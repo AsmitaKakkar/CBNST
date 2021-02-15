@@ -9,7 +9,7 @@
 
 float f(float x)
 {
-    return pow(x,2)-4;
+    return pow(x,3)-4*x-9;
 }
 
 float bisection(float a,float b)
