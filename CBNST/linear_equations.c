@@ -27,19 +27,31 @@ int main()
 		printf("\n");
 	}
 	printf("************UPPER TRIANGULAR***********\n");
+
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n;j++)
+		{
+			if(i>j)
+			{
+				arr[i][j]-=(arr[i-1][i-1]/arr[i-1][i-1])*arr[i][j];
+			}
+			if(i==j)
+			{
+				arr[i][i]/=arr[i][i];
+			}
+		}
+	}
+	
 	
 	for(i=0;i<n;i++)
 	{
-		for(j=0;j<=n;j++)
+		for(j=0;j<n;j++)
 		{
-			if(i<=j)
 			printf("%d ",arr[i][j]);
-			else
-			printf("0 ");
 		}
 		printf("\n");
 	}
-	
 
 	return 0;
 }
